@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Login & Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <div class="form-container">
+                <!-- Login Form -->
+                <div class="form login-form">
+                    <h2>Login</h2>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" required>
+                            <span>Username</span>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" required>
+                            <span>Password</span>
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <button type="submit">Login</button>
+                        <p>Don't have an account? <span id="register">Register</span></p>
+                    </form>
+                </div>
+
+                <!-- Registration Form -->
+                <div class="form registration-form">
+                    <h2>Register</h2>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" required>
+                            <span>First Name</span>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" required>
+                            <span>Last Name</span>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" required>
+                            <span>Email</span>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" required>
+                            <span>Password</span>
+                        </div>
+                        <button type="submit">Register</button>
+                        <p>Already have an account? <span id="login">Login</span></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

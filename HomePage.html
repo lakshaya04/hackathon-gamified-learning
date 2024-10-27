@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewsport" content="with=device-width, initial-scale=1.0">
+    <title>Learning Website Design</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://staackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="/mainpage/logo.jpg"></a>
+            <div class="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <!-- <ul class="un-list" > -->
+                    <li><a href="">HOME</a></li> 
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">SERVICE</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href="">LOGIN</a></li>
+                </ul>
+            </div>
+        </nav>
+
+<div class="text-box">
+    <!-- <img src="" alt="xyz"> -->
+    <h1 class="heading">Unlock Your Learning Adventure Today</h1>
+    <a href="" class="hero-btn">Visit Us To Know More</a>
+</div>
+
+    </section>
+<!----- Course ----->
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p>This is the space to introduce the Services section.Briefly describe the types of sevices offered</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>DATA STRUCTURES AND ALGORITHMS</h3>
+            <p>Data Structures and Algorithms(DSA)is a fundamental part of Computer Science that teaches you how to think and solve complex problems systematically. Using the right data structure and algorithms makes your program run faster,especially when working with lots of data.</p>
+            
+        </div>
+        <div class="course-col">
+            <h3>DATA BASE MANAGEMENT SYSTEMS</h3>
+            <p>Database Management Systems(DBMS) are software systems used to store,retrieve,and run queries on data. A DBMS serves as an interface between and end-user and a database,allowing users to create,read,uodate,and delete data in the data base.  </p>
+            
+    </div>
+    <div class="course-col">
+        <h3>ARTIFICIAL INTELLIGENCE</h3>
+        <p>Artificial Intelligence(AI) is a field of science concerned with building computers and machines that can reason,learn,and act in such a way that would normally require human intelligence or that involes data whose scale exceeds what humans can analyze.</p>
+        
+</section>
+
+<!-------campus------->
+
+<section class="campus">
+    <h1>Game Level Maps</h1>
+    <p>Set Sail on an Adventure</p>
+
+    <div class="row">
+        <div class="campus-col">
+            <img src="/mainpage/ds.jpg">
+            <div class="layer">
+                <h3>DATA STRUCTURES AND ALGORITHMS</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+             <img src="/mainpage/dbms.jpg">
+            <div class="layer">
+                <h3>DATA BASE MANAGEMENT SYSTEM</h3>
+            </div>
+            <div class="campus-col">
+                 <img src="/mainpage/ai.jpg">
+                <div class="layer">
+                    <h3>ARTIFICIAL INTELLIGENCE</h3>
+                </div>   
+    </div>
+</section>
+
+<!-- ------facilitates-------->
+
+<section class="facilitates">
+    <h1>Our Facilitates</h1>
+
+    <div class="row">
+        <div class="facilates-col">
+            <h3>Interactive Courses</h3>
+            <p>Engage with interactive games design to enhance your learning journey creatively</p>
+                
+        </div>
+        <div class="facilates-col">
+            <h3>Rewardin Progress</h3>
+            <p>Challenge yourself on engaging quizzes that turn difficult concepts into enjoyable gaming experiences</p>
+                
+        </div>
+        <div class="facilates-col">
+            <h3>Gamified Learning</h3>
+            <p>Dive into captivating topics that make education come alive through challenges and game mechanics</p>
+                
+        </div>
+    </div>
+</section>
+
+<!-- -----testimonials---- -->
+
+<!-- <section class="testimonials">
+    <h1>What Our Student Says</h1>
+    <p>Loreum ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="images/user1.jpg">
+            <div>
+                <p>Loreum ipsum dolor</p>
+                <h3>Christine Berkley</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                        </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="images/user2.jpg">
+            <div>
+                <p>Loreum ipsum dolor</p>
+                <h3>David Byer</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+    </div>
+
+</section> -->
+
+<!-- -----Call to action -->
+
+<section class="cta">
+    <h1>QuestAcademy </h1>
+    <p>Questacademy revolutionizes learning through engaging games,helping users,earn points while mastering new concepts </p>
+</section>
+
+<!-- =====Footer----- -->
+
+<section class="footer">
+    <h4>About us</h4>
+    <p>With a variety of courses availaible,QuestAcademy empowers users to learn essential subjects while enjoying the thrill of earning points and comparing achievements with others.</p>
+    <div class="ions">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by QuestAcademy</p>
+</section>
+
+
+
+<!--------JavaScript for Toggle Menu------>
+<script>
+      
+      var navLinks = document.getElementById("navlinks");
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+      }
+      
+</script>      
+<link rel="stylesheet" href="HomePage.css">
+</body>
+</html>
